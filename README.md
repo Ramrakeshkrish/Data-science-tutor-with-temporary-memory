@@ -1,6 +1,4 @@
-# Data-science-tutor-with-temporary-memory
-
- # 🎓 AI Powered Data Science Tutor
+# 🎓 AI Powered Data Science Tutor
 
 This is a **Streamlit** web application that serves as an **AI-powered tutor** for **Data Science**, using **Google Gemini API** and **LangChain**.
 
@@ -12,27 +10,72 @@ This is a **Streamlit** web application that serves as an **AI-powered tutor** f
 
 ---
 
-## 📦 Installation
+## 📚 Installation
 
 ### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/your-username/your-repository.git
 cd your-repository
+```
 
-2️⃣ Create a Virtual Environment
+### 2️⃣ Create a Virtual Environment
+```bash
 python -m venv venv
+# Activate environment
 source venv/bin/activate  # On macOS/Linux
 venv\Scripts\activate  # On Windows
+```
 
-3️⃣ Install Dependencies
+### 3️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 
-🔑 Setup API Key (Secure Method)
+---
 
-Create a .streamlit/secrets.toml file in the repository directory:
-mkdir -p ~/.streamlit
-nano ~/.streamlit/secrets.toml
+## 🔑 API Key Setup
+1. Create a **.streamlit** directory in your project root.
+2. Inside **.streamlit**, create a file named `secrets.toml`.
+3. Add the following content:
 
-add following content in the file
+```toml
 [API]
-API_KEY = "your-api-key-here"
+API_KEY = "your-google-gemini-api-key"
+```
+
+4. Ensure the file is **ignored in version control** (`.gitignore` should include `.streamlit/secrets.toml`).
+
+---
+
+## 📱 Running the Application
+```bash
+streamlit run app.py
+```
+
+---
+
+## 📝 Deployment
+### Deploy on **Streamlit Cloud**
+1. Push your project to **GitHub**.
+2. Go to **Streamlit Cloud**: [https://share.streamlit.io](https://share.streamlit.io)
+3. Connect your repository and set **secrets** in the Streamlit Cloud settings.
+
+---
+
+## 🔧 Technologies Used
+- **Python**
+- **Streamlit**
+- **Google Gemini API**
+- **LangChain**
+- **SQLite** (for chat history)
+
+---
+
+## 🌟 Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+---
+
+## 📖 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
