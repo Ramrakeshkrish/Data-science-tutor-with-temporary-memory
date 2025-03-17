@@ -27,7 +27,7 @@ if "session_id" not in st.session_state:
 def get_message_from_history():
     chat_history = SQLChatMessageHistory(
         session_id=st.session_state.session_id,
-        connection="sqlite:////Users/jrudram/Downloads/raksenv/intership/my_database.db"
+        connection="sqlite:////my_database.db"
     )
     return chat_history
 
