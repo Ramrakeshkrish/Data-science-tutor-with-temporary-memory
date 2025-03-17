@@ -23,3 +23,16 @@ cd your-repository
 python -m venv venv
 source venv/bin/activate  # On macOS/Linux
 venv\Scripts\activate  # On Windows
+
+3️⃣ Install Dependencies
+pip install -r requirements.txt
+
+🔑 Setup API Key (Secure Method)
+
+Create a .streamlit/secrets.toml file in the repository directory:
+mkdir -p ~/.streamlit
+nano ~/.streamlit/secrets.toml
+
+add following content in the file
+[API]
+API_KEY = "your-api-key-here"
